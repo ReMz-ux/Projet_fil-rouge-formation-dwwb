@@ -1,0 +1,544 @@
+/* Feuille de style de la page d'accueil du projet fil rouge */
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    flex: wrap;
+  }
+
+  .search_bar {
+    max-width: 500px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .zone-de-contenue {
+    height: 1500px;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .Box-articles {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+/* Pas de marge sur toute la page */
+body {
+  margin: 0;
+  /* Image de fond de page */
+
+
+
+}
+
+/* LE HEADER */
+
+/* La dimension du logo par rapport au header */
+#logo {
+  height: 20px;
+}
+
+/* Alignement des élements a l'interieur du header + les couleurs */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f2ee;
+  padding: 10px 30px;
+  max-width: auto;
+  position: sticky;
+  top: 0;
+}
+
+/* Disposition accueil et boutique */
+.nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Positionnement de l'accueil et de la boutique + remove du soulignement et modif de la font */
+.nav_bar a {
+  text-decoration: none;
+  color: #070aaf;
+  font-weight: bold;
+  font-size: 2.1em;
+
+}
+
+
+
+/* Positionnement + style de la search bar dans le header */
+.search_bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 4px solid #070aaf;
+  border-radius: 40px;
+  padding: 5px 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 102, 0.3);
+  height: 60px;
+  color: #070aaf;
+  flex: 1;
+  text-align: center;
+}
+
+/* Modification de l'input de la searchbar */
+.search_bar input {
+  border: none;
+  outline: none;
+  font-size: 30px;
+  color: #070aaf;
+}
+
+/*  Positionnement du lien de la page pour s'inscrire */
+.sinscrire {
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+/* Remove du surlignement du texte du lien */
+.signup {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #070aaf;
+  margin-right: 25px;
+}
+
+.fa-circle-user {
+  font-size: 80px;
+}
+
+
+/* CONTENUE PRINCIPAL (SIDEBAR) */
+
+
+/* Position du conteneur principal  */
+.main-container {
+  display: flex;
+  padding: 20px;
+  gap: 30px;
+  justify-content: space-evenly;
+  background-image: url(/8_Front-end/Images/santiago-bernabeu-1.jpg);
+  background-size: cover;
+
+}
+
+/* Position de la sidebar */
+
+.sidebar {
+  width: auto;
+  background: rgba(255, 255, 255, 0.709);
+  border-radius: 15px;
+  padding: 25px;
+  height: 1000px;
+  border: solid 6px #070aaf;
+}
+
+/* Positionnement du h2 et de la sidebar */
+.sidebar h2 {
+  color: #070aaf;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+/* Positionnement des titre de championnats dans la sidebar */
+.item-ligue1,
+.item-premierleague,
+.item-seriea,
+.item-liga,
+.item-bundesliga {
+  display: flex;
+  gap: 15px;
+  padding: 12px 0;
+}
+
+/* Réglage de la police des noms de championnats */
+.league-name {
+  font-weight: 600;
+  font-size: 50px;
+  color: #070aaf;
+  align-content: center;
+}
+
+/* ZONE DE CONTENUE PRINCIPAL */
+
+/* Ajustement de la zone de contenue */
+.zone-de-contenue {
+  background: rgba(255, 255, 255, 0.708);
+  padding: 25px;
+  width: auto;
+  justify-content: space-around;
+  border-radius: 25px;
+  height: 1000px;
+  border: solid 6px #070aaf;
+
+}
+
+/* Ajustement titre "les plus vendus" */
+.main-title {
+  color: #e45252;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Positionnement des maillots dans la zone de contenue */
+.image-maillot {
+  display: flex;
+  justify-content: center;
+  height: 500px
+}
+
+/* On sépare les articles entre eux et on les centres*/
+.Box-articles {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+/* On modifie les dimensions des noms des produits */
+.titre-des-produits {
+  color: #070aaf;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* On vien reglé les dimensions des prix */
+.prix {
+  color: #070aaf;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Ici on personnalise les bouton */
+.custom-btn {
+  background-color: #000066;
+  color: #f1f2ee;
+  font-size: 30px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* Alignement du bonton */
+.div-btn {
+  text-align: center;
+}
+
+
+
+/* FOOTER */
+
+/* Ici on modifie les emplacement du contenu a l'interieur du footer */
+.footer-container {
+  display: flex;
+  padding: 20px 30px;
+  max-width: auto;
+  justify-content: space-between;
+  background-color: #f1f2ee;
+}
+
+/* Modification du logo de livraison */
+.fa-truck-fast {
+  font-size: 80px;
+  color: #000066;
+}
+
+/* Redimension du texte en dessous du logo de livraison */
+.delivery-free {
+  font-size: 30px;
+  color: #000066;
+
+}
+
+/* On centre le contenu a l'interieur de cet div */
+.livraison-info {
+  text-align: center;
+}
+
+/* bis */
+.mid-content {
+  text-align: center;
+}
+
+/* Re size du logo de paiement sécuriser */
+.fa-lock {
+  font-size: 80px;
+  color: #000066;
+}
+
+/* Re size du text en dessous du logo avec le cadenas */
+.check-paiement {
+  font-size: 30px;
+}
+
+/* Alignement a l'interieur de la div de droite dans le footer */
+.right-content {
+  text-align: center;
+}
+
+/* Re size du logo (horloge) */
+.fa-stopwatch {
+  font-size: 80px;
+  color: #000066;
+}
+
+/* Re size du texte en dessous du logo horloge (delai de livraison) */
+.delay-delivery {
+  font-size: 30px;
+}
+
+/* On align le contenu de navigations dans le footer */
+.Navigations {
+  text-align: center;
+  padding-left: 30px;
+  color: #000066;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+/* On vien ajuster les mentions légales et la politique de confidentialité */
+.mentions-légales {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 210px;
+  text-align: center;
+  color: #000066;
+}
+
+.politique-de-confidentialité {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #000066;
+  margin-top: 100px;
+}
+
+/* On modifie la list et on l'align au contenue */
+.navlist-footer,
+.list-footer {
+  text-align: center;
+  list-style-type: none;
+  font-size: 30px;
+  color: #000066;
+}
+
+/* On re-size les nom des réseaux sociaux */
+#follow {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000066;
+  align-items: center;
+}
+
+/* Petit espacement entre le logo playstor appstore et reseaux sociaux */
+#logo-app {
+  margin-bottom: 25px;
+}
+
+.réseaux-sociaux {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+
+#instagram,
+#whatsapp,
+#x {
+  font-size: 30px;
+  color: #000066;
+}
+
+.item-ligue1,
+.item-premierleague,
+.item-seriea,
+.item-liga,
+.item-bundesliga {
+  justify-content: center;
+}
+
+.league-name-footer {
+  align-content: center;
+  font-size: 30px;
+  color: #000066;
+}
+
+.championnats-footer {
+  margin-top: 60px;
+}
+
+#CGV {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000066;
+  margin-top: 60px;
+}
+
+
+
+
+/* RESPONSIVE */
+
+
+
+@media screen and (min-width: 738px) and (max-width: 991px) {
+
+  /* Redimension de l'ecran entre 768px et 991px */
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    flex: wrap;
+  }
+
+  .search_bar {
+    width: 500px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .zone-de-contenue {
+    height: 3700px;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .Box-articles {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 738px) {
+
+  /* Redimension de l'ecran entre 576px et 738px */
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    flex: wrap;
+  }
+
+  .search_bar {
+    width: 500px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .zone-de-contenue {
+    height: 3700px;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .Box-articles {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .left-content,
+  .mid-content,
+  .right-content {
+    margin-left: 200px;
+    margin-right: 300px;
+  }
+
+  .réseaux-sociaux {
+    width: 250px;
+    justify-content: center;
+    margin-right: 600px;
+  }
+
+  .politique-de-confidentialité {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1299px) {
+
+  .nav_bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .zone-de-contenue {
+    height: 3600px;
+  }
+
+  .Box-articles {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .mentions-légales {
+    margin-top: 705px;
+  }
+
+  #CGV {
+    margin-top: 600px;
+  }
+
+  .réseaux-sociaux {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 2000px) {
+  .main-container {
+    justify-content: unset;
+  }
+
+  .zone-de-contenue {
+    font-size: ;
+  }
+
+
+}
