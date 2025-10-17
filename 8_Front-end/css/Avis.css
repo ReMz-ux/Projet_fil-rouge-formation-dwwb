@@ -1,0 +1,65 @@
+/* On créer le container et je le dimensionne */
+.div-avis {
+    border: solid 2px #070aaf;
+    background-color: rgba(255, 255, 255, 0.98);
+    border-radius: 15px;
+    width: 1400px;
+    height: 1000px;
+}
+
+/* Je reduit un peu l'espacement entre les container principaux */
+.main-container {
+    gap: 15px;
+}
+
+/* On centre et modifie la couleur et la police */
+#titre-avis {
+    color: #FF1654;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+/* Je centre les onglet avis au centre en modifiant la couleur */
+.onglet-avis {
+    display: flex;
+    justify-content: space-around;
+    color: #FF1654;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Je place les icones d'utilisateur dans le container avis */
+.avis-utilisateur {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    height: auto;
+    gap: 50px;
+    color: #070aaf;
+    padding-top: 50px;
+}
+
+#nom-utilisateur1,
+#temps1 {
+    margin-bottom: 2px;
+}
+
+#nom-utilisateur2,
+#temps2 {
+    margin-bottom: 2px;
+}
+
+#nom-utilisateur3,
+#temps3 {
+    margin-bottom: 2px;
+}
+
+.text-area {
+    color: #070aaf;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}

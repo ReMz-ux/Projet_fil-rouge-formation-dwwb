@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire</title>
+    <!-- On joint la feuille des style de la page -->
+    <link rel="stylesheet" href="/8_Front-end/css/Sinscrire.css">
+    <!-- On insert ici le lien pour les logo depuis font awesome -->
+    <script src="https://kit.fontawesome.com/aa3626705d.js" crossorigin="anonymous"></script>
+    <!-- On connecte google fonts pour la police choisi sur la page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<header class="header">
+  <!-- Barre de navigation de gauche -->
+ <nav class="nav_bar">
+    <div class="nav-left">
+      <a href="/8_Front-end/html/Page daccueil.html">Accueil</a>
+      <a href="shop" id="shop">Boutique</a>
+      <a href="FAQ">FAQ</a>
+    </div>
+<!-- Mon logo au centre -->
+    <div class="logo">
+      <img src="/8_Front-end/Images/Logo du site-min.png" alt="LogoLe12emeShop" height="150px" width="150px" />
+    </div>
+<!-- Navigation de droite -->
+    <div class="nav-right">
+      <a href="#">Qui sommes nous ?</a>
+      <a href="/8_Front-end/html/Avis.html">Avis</a>
+    </div>
+  </nav>
+</header>
+<body>
+  <main>
+  <!-- Formulaire de gauche (Inscription) -->
+  <section class="formulaires">
+  <div class="formulaire-inscription">
+    <h2>Créer un compte</h2>
+    <!-- Champ de texte -->
+    <form action="#" method="post" class="formulaire-inscription">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" placeholder="Saisissez votre nom" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" placeholder="Saisissez votre mail " required>
+
+      <label for="mdp">Mot de passe :</label>
+      <input type="password" id="mdp" name="mdp" placeholder="Saisissez votre mail" required>
+
+      <button type="submit" class="inscription">S'inscrire</button>
+    </form>
+  </div>
+<!-- Formulaire de droite (Connexion) -->
+  <div class="formulaire-connexion">
+    <h2>Se connecter</h2>
+    <!-- Champ de texte -->
+    <form action="#" method="post" class="formulaire-connexion">
+      <label for="email-co">Email :</label>
+      <input type="email" id="email-co" name="email" placeholder="Saisissez votre mail ici" required>
+
+      <label for="mdp-co">Mot de passe :</label>
+      <input type="password" id="mdp-co" name="password" placeholder="Saisissez votre mot de passe ici" required>
+
+      <button type="submit" class="connexion">Connexion</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <!-- Le pied de page  -->
+    <div class="footer-container">
+            <!--Contenu du pied de page de gauche-->
+            <div class="left-content col-4">
+              <!-- Icones camion livraison -->
+              <div class="livraison-info">
+              <i class="fa-solid fa-truck-fast" width="300px" height="300px"></i>
+              <p class="delivery-free">Livraison offerte dés 50€ d'achat</p>
+              </div>
+              <!-- Navigations du pied de pages -->
+              <div class="navlist-footer">
+                <p class="Navigations">Navigations</p>
+                <ul class="list-footer">
+                  <li>Accueil</li>
+                  <li>Boutique</li>
+                  <li>FAQ</li>
+                  <li>Qui sommes nous ?</li>
+                  <li>Avis</li>
+                  <li>Contactez nous</li>
+                </ul>
+              </div>
+              <!-- Texte mentions légales -->
+              <p class="mentions-légales">Mentions Légales</p>
+            <!-------------------------------------------------------------------->
+
+            </div> <!-- Contenu du milieu du footer-->
+            <div class="mid-content col-4">
+              <div class="paiement-secured">
+                <i class="fa-solid fa-lock"></i>
+                <p class="check-paiement">Paiment sécurisé</p>
+                <img src="/8_Front-end/Images/logo-paiement.png" width="200px" height="90px">
+                <img src="/8_Front-end/Images/logo-paypal.png" width="200px" alt="">
+                <img src="/8_Front-end/Images/Logo-playstore-app-store.png" width="280px" height="200px" alt="logoapp" id="logo-app">
+                </div>
+                <!--  Affichage des réseaux sociaux -->
+                <div class="réseaux-sociaux">
+                <p id="follow">Suivez nous sur</p>
+                <div class="insta">
+                <img src="/8_Front-end/Images/instagram.png" alt="insta" width="100px" height="100px">
+                <p id="instagram">Instagram</p>
+                </div>
+                <div class="whatsapp">
+                <img src="/8_Front-end/Images/whattsapplogo.png" alt="wh" width="100px" height="100px">
+                <p id="whatsapp">Whatsapp</p>
+                </div>
+                <div class="x">
+                  <img src="/8_Front-end/Images/x-new-twitter-logo-free-png.webp" alt="x" width="100px" height="100px">
+                  <p id="x">X</p>
+                </div>
+              </div>
+              <div>
+               <p class="politique-de-confidentialité">Politique de confidentialité</p>
+               </div>
+
+               <!-- --------------------------------------------------- -->
+
+               <!-- Contenu a droite du footer -->
+            </div>
+            <div class="right-content col-4">
+              <!-- Logo délai de livraison -->
+              <i class="fa-solid fa-stopwatch"></i>
+              <p class="delay-delivery">Délai de livraison 24h a 48h</p>
+
+              <!-- Container footer liste des championnats -->
+              <div class="championnats-footer">
+              <div class="item-ligue1">
+                <div class="league-logo">
+                  <nav><a href="">
+                  <img id="ligue1footer" src="/8_Front-end/Images/Logo ligue 1.png" width="80px" height="80px" alt="ligue1"></a></nav>
+                </div>
+                <div class="league-name-footer">Ligue 1</div>
+            </div>
+            <!-- PremierLeague -->
+            <div class="item-premierleague">
+                <div class="league-logo">
+                  <img id="plfooter" src="/8_Front-end/Images/Logopremierleague.png" width="80px" height="80px" alt="">
+                </div>
+                <div class="league-name-footer">Premier League</div>
+            </div>
+            <!-- Serie A -->
+            <div class="item-seriea">
+                <div class="league-logo">
+                  <img id="seriafooter" src="/8_Front-end/Images/aaaaaaaaaaaaaaaaaaaaaa-removebg-preview.png" width="80px" height="80px" alt="logoseria">
+                </div>
+                <div class="league-name-footer">Serie A</div>
+            </div>
+            <!-- Liga -->
+            <div class="item-liga">
+                <div class="league-logo">
+                  <img id="ligafooter" src="/8_Front-end/Images/laligalogo.png" width="80px" height="80px" alt="logoliga">
+                </div>
+                <div class="league-name-footer">Liga</div>
+            </div>
+            <!-- Bundeslisga -->
+            <div class="item-bundesliga">
+                <div class="league-logo">
+                  <img id="bundesligafooter" src="/8_Front-end/Images/bundesligalogo.png" width="80px" height="80px" alt="bundes">
+                </div>
+                <div class="league-name-footer">Bundesliga</div>
+            </div>
+            <p id="CGV">Conditions générales de ventes</p>
+            </div>
+            </div>
+          </div>
+
+</footer>
+
+ <!-- Insertion du script js  -->
+<script src="/8_Front-end/js/localStorage.js" defer></script>
+<script src="/8_Front-end/js/dynamique.js" defer></script>
+</body>
+</html>

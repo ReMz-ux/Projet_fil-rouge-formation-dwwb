@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Le 12éme Shop France | Accueil</title>
+    <title> Le 12éme Shop France | Panier</title>
     <!-- On relie la page css -->
     <link rel="stylesheet" href="Page d'accueil.css" />
+    <link rel="stylesheet" href="Mon panier.css">
 
     <!-- On joint la police depuis google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,16 +18,16 @@
     <script src="https://kit.fontawesome.com/aa3626705d.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>  <!-- Le header -->
+    <!-- Le header -->
     <header class="header">
           <!-- Le logo -->
       <div class="logo">
-        <img src="/8_Front-end/Images/Logo du site.png" alt="LogoLe12emeShop" class="logo" height="250px" width="250px"/>
+        <img src="/8_Front-end/Images/Logo du site.png" alt="LogoLe12emeShop" class="logo" height="125px" width="125px"/>
       </div>
           <!-- La barre de navigation -->
       <div>
         <nav class="nav_bar">
-          <a href="#">Accueil</a>
+          <a href="Page d'accueil.html">Accueil</a>
           <a href="shop" id="shop">Boutique</a>
           <a href="FAQ">FAQ</a>
           <a href="#">Qui sommes nous ?</a>
@@ -40,7 +41,8 @@
       </div>
            <!-- Bouton S'inscire-->
       <div class="sinscrire">
-        <a href="/8_Front-end/S'inscrire.html" class="signup">S’inscrire</a>
+        <!-- Ici logo du panier -->
+         <i class="fa-solid fa-cart-shopping"></i>
            <!--Logo pour se connecter-->
         <div class="conexionlogo">
          <i class="fa-solid fa-circle-user" width="100px" height="100px"></i>
@@ -59,97 +61,76 @@
           <!-- Ligue 1-->
             <div class="item-ligue1">
                 <div class="league-logo">
-                  <nav><a href="">
-                  <img src="/8_Front-end/Images/Logo ligue 1.png" width="120px" height="120px" alt="ligue1"></a></nav>
+                  <a href="">
+                  <img src="/8_Front-end/Images/Logo ligue 1.png" width="80px" height="80px" alt="ligue1"></a>
                 </div>
-                <div class="league-name">Ligue 1</div>
+                <div class="league-name">
+                  <nav>
+                    <a href="Page_maillot_ligue1.html">Ligue 1</a>
+                    </nav>
+                  </div>
+                
             </div>
             <!-- PremierLeague -->
             <div class="item-premierleague">
                 <div class="league-logo">
-                  <img src="/8_Front-end/Images/Logopremierleague.png" width="120px" height="120px" alt="">
+                  <img src="/8_Front-end/Images/Logopremierleague.png" width="80px" height="80px" alt="">
                 </div>
-                <div class="league-name">Premier League</div>
+                <div class="league-name">
+                  <nav>
+                    <a href="Page_Premier-League.html">Premier League</a>
+                </nav>
+                </div>
             </div>
             <!-- Serie A -->
             <div class="item-seriea">
                 <div class="league-logo">
-                  <img src="/8_Front-end/Images/aaaaaaaaaaaaaaaaaaaaaa-removebg-preview.png" width="120px" height="120px" alt="logoseria">
+                  <img src="/8_Front-end/Images/aaaaaaaaaaaaaaaaaaaaaa-removebg-preview.png" width="80px" height="80px" alt="logoseria">
                 </div>
-                <div class="league-name">Serie A</div>
+                <div class="league-name">
+                  <nav>
+                    <a href="Page_maillot_serieA.html">Serie A</a>
+                  </nav>
+                </div>
             </div>
             <!-- Liga -->
             <div class="item-liga">
                 <div class="league-logo">
-                  <img src="/8_Front-end/Images/laligalogo.png" width="120px" height="120px" alt="logoliga">
+                  <img src="/8_Front-end/Images/laligalogo.png" width="80px" height="80px" alt="logoliga">
                 </div>
-                <div class="league-name">Liga</div>
+                <div class="league-name">
+                  <nav>
+                  <a href="Page_Liga.html">Liga</a>
+                </nav>
+              </div>
             </div>
             <!-- Bundeslisga -->
             <div class="item-bundesliga">
                 <div class="league-logo">
-                  <img src="/8_Front-end/Images/bundesligalogo.png" width="120px" height="120px" alt="bundes">
+                  <img src="/8_Front-end/Images/bundesligalogo.png" width="80px" height="80px" alt="bundes">
                 </div>
-                <div class="league-name">Bundesliga</div>
+                <div class="league-name">
+                  <nav>
+                    <a href="Page_Bundesliga.html">Bundesliga</a>
+                  </nav>
+                </div>
             </div>
           </div>
                 <!------------------------------------------------------------->
 
-                <!-- Les articles proposé -->
-          <section>
-          <div class="zone-de-contenue">
-            <h1 class="main-title">Nos produits les plus vendus</h1>
-
-            <div class="Box-articles">
-                <div class="Box-Realmadrid">
-                    <div class="image-maillot">
-                      <img src="/8_Front-end/Images/realmadrid-maillot.webp" width="500px" height="500px" alt="RMFC">
-                    </div>
-                    <div class="titre-des-produits">Maillot Domicile<br>Real Madrid 2025</div>
-                    <div class="prix">64,99€</div>
-                    <div class="div-btn">
-                    <button class="custom-btn">Personnaliser</button>
-                    </div>
+                <!-- Container du panier -->
+                <div class="panier-container">
+                    <h3 id="mon-titre">Mon Panier</h3>
+                    <p id="Information">Votre panier est vide</p>
                 </div>
-
-                <div class="Box-Barcelona">
-                    <div class="image-maillot">
-                      <img src="/8_Front-end/Images/fcbarcelona-maillot.jpg" width="500px" height="500px" alt="FCB">
-                    </div>
-                    <div class="titre-des-produits">Maillot Domicile FC<br>Barcelone 2025</div>
-                    <div class="prix">59,99€</div>
-                    <div class="div-btn">
-                    <button class="custom-btn">Personnaliser</button>
-                    </div>
+                <div class="récap-commande">
+                    <h4 id="info-commande">Récapitulatif de votre commande</h4>
+                    
+                 <button class="valider-commande">Valider la commande</button>
                 </div>
-
-                <div class="Box-Mancity">
-                    <div class="image-maillot">
-                      <img src="/8_Front-end/Images/mancity-maillot.webp" width="500px" height="500px" alt="MANCITY">
-                    </div>
-                    <div class="titre-des-produits">Maillot Domicile<br>Manchester City 2025</div>
-                    <div class="prix">59,99€</div>
-                    <div class="div-btn">
-                    <button class="custom-btn">Personnaliser</button>
-                    </div>
-                </div>
-                <div class="Box-Intermilan">
-                    <div class="image-maillot">
-                      <img src="/8_Front-end/Images/maillot-inter-milan-domicile-2025-202620250612083612684a755c0774f.jpg" width="500px" height="500px" alt="MANCITY">
-                    </div>
-                    <div class="titre-des-produits">Maillot Domicile<br>Inter de Milan</div>
-                    <div class="prix">59,99€</div>
-                    <div class="div-btn">
-                    <button class="custom-btn">Personnaliser</button>
-                    </div>
-                </div>
-            </div>
-        </div>
      </div>
-     </section>
-     </main>
 
-        <footer>   <!-- Le pied de page -->
+     <footer>   <!-- Le pied de page -->
           <div class="footer-container">
             <!--Contenu du pied de page de gauche-->
             <div class="left-content col-4">
@@ -181,21 +162,21 @@
                 <p class="check-paiement">Paiment sécurisé</p>
                 <img src="/8_Front-end/Images/logo-paiement.png" width="200px" height="90px">
                 <img src="/8_Front-end/Images/logo-paypal.png" width="200px" alt="">
-                <img src="/8_Front-end/Images/Logo-playstore-app-store.png" width="280px" height="200px" alt="logoapp" id="logo-app">
+                <img src="/8_Front-end/Images/Logo-playstore-app-store.png" width="100px" height="100px" alt="logoapp" id="logo-app">
                 </div>
                 <!--  Affichage des réseaux sociaux -->
                 <div class="réseaux-sociaux">
                 <p id="follow">Suivez nous sur</p>
                 <div class="insta">
-                <img src="/8_Front-end/Images/instagram.png" alt="insta" width="100px" height="100px">
+                <img src="/8_Front-end/Images/instagram.png" alt="insta" width="50px" height="50px">
                 <p id="instagram">Instagram</p>
                 </div>
                 <div class="whatsapp">
-                <img src="/8_Front-end/Images/whattsapplogo.png" alt="wh" width="100px" height="100px">
+                <img src="/8_Front-end/Images/whattsapplogo.png" alt="wh" width="50px" height="50px">
                 <p id="whatsapp">Whatsapp</p>
                 </div>
                 <div class="x">
-                  <img src="/8_Front-end/Images/x-new-twitter-logo-free-png.webp" alt="x" width="100px" height="100px">
+                  <img src="/8_Front-end/Images/x-new-twitter-logo-free-png.webp" alt="x" width="50px" height="50px">
                   <p id="x">X</p>
                 </div>
               </div>
@@ -256,3 +237,7 @@
         </footer>
   </body>
 </html>
+
+                
+                
+                

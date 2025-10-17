@@ -1,0 +1,293 @@
+/* Feuille de styule de la page d'inscription */
+
+/* Adapte la taille de l'ecran entre 768px et 991px*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        flex: wrap;
+    }
+
+    .search_bar {
+        max-width: 500px;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .zone-de-contenue {
+        height: 1500px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .Box-articles {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+/* Pas de marge sur toute la page */
+body {
+    margin: 0;
+    /* Image de fond de page */
+
+
+
+}
+
+
+/* Pas de marge sur tout le contenue de la page */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.header {
+    background-color: #f1f2ee;
+}
+
+/* On aligne les elements dans le header cet a dire toute la navbar */
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/* On adapte la taille des liens tout en enlevant le surlignement */
+.nav-left a,
+.nav-right a {
+    margin: 0 15px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #03045e;
+    font-weight: bolder;
+}
+
+/* On aligne le logo au centre du header */
+.logo {
+    text-align: center;
+}
+
+
+
+.formulaires {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #fafafa;
+    gap: 60px;
+    background-color: #03045e;
+    padding-bottom: 100px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.formulaires div {
+    width: 45%;
+    padding: 80px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #03045e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #03045e;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #03045e
+}
+
+.inscription,
+.connexion {
+    transition: color 0.3s ease;
+}
+
+/* FOOTER */
+
+/* Ici on modifie les emplacement du contenu a l'interieur du footer */
+.footer-container {
+    display: flex;
+    padding: 20px 30px;
+    max-width: auto;
+    justify-content: space-between;
+    background-color: #f1f2ee;
+}
+
+/* Modification du logo de livraison */
+.fa-truck-fast {
+    font-size: 40px;
+    color: #000066;
+}
+
+/* Redimension du texte en dessous du logo de livraison */
+.delivery-free {
+    font-size: 20px;
+    color: #000066;
+
+}
+
+/* On centre le contenu a l'interieur de cet div */
+.livraison-info {
+    text-align: center;
+}
+
+/* bis */
+.mid-content {
+    text-align: center;
+}
+
+/* Re size du logo de paiement sécuriser */
+.fa-lock {
+    font-size: 40px;
+    color: #000066;
+}
+
+/* Re size du text en dessous du logo avec le cadenas */
+.check-paiement {
+    font-size: 20px;
+}
+
+/* Alignement a l'interieur de la div de droite dans le footer */
+.right-content {
+    text-align: center;
+}
+
+/* Re size du logo (horloge) */
+.fa-stopwatch {
+    font-size: 40px;
+    color: #000066;
+}
+
+/* Re size du texte en dessous du logo horloge (delai de livraison) */
+.delay-delivery {
+    font-size: 20px;
+}
+
+/* On align le contenu de navigations dans le footer */
+.Navigations {
+    text-align: center;
+    padding-left: 30px;
+    color: #000066;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+/* On vien ajuster les mentions légales et la politique de confidentialité */
+.mentions-légales {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 210px;
+    text-align: center;
+    color: #000066;
+}
+
+.politique-de-confidentialité {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #000066;
+    margin-top: 100px;
+}
+
+/* On modifie la list et on l'align au contenue */
+.navlist-footer,
+.list-footer {
+    text-align: center;
+    list-style-type: none;
+    font-size: 30px;
+    color: #000066;
+}
+
+/* On re-size les nom des réseaux sociaux */
+#follow {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000066;
+    align-items: center;
+}
+
+/* Petit espacement entre le logo playstor appstore et reseaux sociaux */
+#logo-app {
+    margin-bottom: 25px;
+}
+
+.réseaux-sociaux {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+
+#instagram,
+#whatsapp,
+#x {
+    font-size: 20px;
+    color: #000066;
+}
+
+.item-ligue1,
+.item-premierleague,
+.item-seriea,
+.item-liga,
+.item-bundesliga {
+    justify-content: center;
+}
+
+.league-name-footer {
+    align-content: center;
+    font-size: 30px;
+    color: #000066;
+}
+
+.championnats-footer {
+    margin-top: 60px;
+}
+
+#CGV {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000066;
+    margin-top: 60px;
+}

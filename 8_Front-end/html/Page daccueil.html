@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Le 12éme Shop France | Accueil</title>
+    <!-- On relie la page css -->
+    <link rel="stylesheet" href="/8_Front-end/css/Page d'accueil.css" />
+    <link rel="stylesheet" href="/8_Front-end/css/Avis.css">
+
+    <!-- On joint la police depuis google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- On connecte bootsrap avec ce lien -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- On connecte font-awesome pour les logo utilisé dans la page -->
+    <script src="https://kit.fontawesome.com/aa3626705d.js" crossorigin="anonymous"></script>
+  </head>
+
+    <!-- Le header -->
+    <header class="header">
+          <!-- Le logo -->
+      <div class="logo">
+        <img src="/8_Front-end/Images/Logo du site-min.png" alt="LogoLe12emeShop" class="logo" height="125px" width="125px"/>
+      </div>
+          <!-- La barre de navigation -->
+      <div>
+        <nav class="nav_bar">
+          <a href="/8_Front-end/html/Page daccueil.html">Accueil</a>
+          <a href="shop" id="shop">Boutique</a>
+          <a href="FAQ">FAQ</a>
+          <a href="#">Qui sommes nous ?</a>
+          <a href="/8_Front-end/html/Avis.html">Avis</a>
+        </nav>
+      </div>
+          <!-- La barre de recherche -->
+      <div class="search_bar">
+        <span class="search-icon"></span>
+        <input type="text" class="search-input" role="search" placeholder="Saisissez votre recherche" />
+      </div>
+           <!-- Bouton S'inscire-->
+      <div class="sinscrire">
+        <a href="/8_Front-end/html/Sinscrire.html" class="signup">S’inscrire</a>
+           <!--Logo pour se connecter-->
+        <div class="conexionlogo">
+         <i class="fa-solid fa-circle-user" width="100px" height="100px"></i>
+        </div>
+      </div>
+    </header>
+
+    <body>
+      <main>
+          <!-- Contenue principal -->
+     <div class="main-container container-fluid">
+          <!-- Menu sidebar -->
+        <div class="sidebar">
+            <h1>Championnats</h1>
+          <!-- Les Emplacements des noms de championnats -->
+          <!-- Ligue 1-->
+            <div class="item-ligue1">
+                <div class="league-logo">
+                  <a href="">
+                  <img src="/8_Front-end/Images/Logo ligue 1.png" width="80px" height="80px" alt="ligue1"></a>
+                </div>
+                <div class="league-name">
+                  <nav>
+                    <a href="/8_Front-end/html/Page_maillot_ligue1.html">Ligue 1</a>
+                    </nav>
+                  </div>
+                
+            </div>
+            <!-- PremierLeague -->
+            <div class="item-premierleague">
+                <div class="league-logo">
+                  <img src="/8_Front-end/Images/Logopremierleague.png" width="80px" height="80px" alt="">
+                </div>
+                <div class="league-name">
+                  <nav>
+                    <a href="/8_Front-end/html/Page_Premier-League.html">Premier League</a>
+                </nav>
+                </div>
+            </div>
+            <!-- Serie A -->
+            <div class="item-seriea">
+                <div class="league-logo">
+                  <img src="/8_Front-end/Images/aaaaaaaaaaaaaaaaaaaaaa-removebg-preview.png" width="80px" height="80px" alt="logoseria">
+                </div>
+                <div class="league-name">
+                  <nav>
+                    <a href="/8_Front-end/html/Page_maillot_serieA.html">Serie A</a>
+                  </nav>
+                </div>
+            </div>
+            <!-- Liga -->
+            <div class="item-liga">
+                <div class="league-logo">
+                  <img src="/8_Front-end/Images/laligalogo.png" width="80px" height="80px" alt="logoliga">
+                </div>
+                <div class="league-name">
+                  <nav>
+                  <a href="/8_Front-end/html/Page_Liga.html">Liga</a>
+                </nav>
+              </div>
+            </div>
+            <!-- Bundeslisga -->
+            <div class="item-bundesliga">
+                <div class="league-logo">
+                  <img src="/8_Front-end/Images/bundesligalogo.png" width="80px" height="80px" alt="bundes">
+                </div>
+                <div class="league-name">
+                  <nav>
+                    <a href="/8_Front-end/html/Page_Bundesliga.html">Bundesliga</a>
+                  </nav>
+                </div>
+            </div>
+          </div>
+                <!------------------------------------------------------------->
+
+                <!-- Les articles proposé -->
+          <section>
+          <div class="zone-de-contenue">
+            <h1 class="main-title">Nos produits les plus vendus</h1>
+
+            <div class="Box-articles">
+                <div class="Box-Realmadrid">
+                    <div class="image-maillot">
+                      <img src="/8_Front-end/Images/realmadrid-maillot.webp" alt="RMFC">
+                    </div>
+                    <div class="titre-des-produits">Maillot Domicile<br>Real Madrid</div>
+                    <div class="prix">64,99€</div>
+                    <div class="div-btn">
+                    <button class="custom-btn">Personnaliser</button>
+                    </div>
+                </div>
+
+                <div class="Box-Barcelona">
+                    <div class="image-maillot">
+                      <img src="/8_Front-end/Images/fcbarcelona-maillot-min.jpg"  alt="FCB">
+                    </div>
+                    <div class="titre-des-produits">Maillot Domicile <br>Barcelone</div>
+                    <div class="prix">59,99€</div>
+                    <div class="div-btn">
+                    <button class="custom-btn">Personnaliser</button>
+                    </div>
+                </div>
+
+                <div class="Box-Mancity">
+                    <div class="image-maillot">
+                      <img src="/8_Front-end/Images/mancity-maillot-min.webp"  alt="MANCITY">
+                    </div>
+                    <div class="titre-des-produits">Maillot Domicile<br>Manchester City</div>
+                    <div class="prix">59,99€</div>
+                    <div class="div-btn">
+                    <button class="custom-btn">Personnaliser</button>
+                    </div>
+                </div>
+                <div class="Box-Intermilan">
+                    <div class="image-maillot">
+                      <img src="/8_Front-end/Images/maillot-inter-milan-domicile-2025-202620250612083612684a755c0774f-min.jpg" alt="MANCITY">
+                    </div>
+                    <div class="titre-des-produits">Maillot Domicile<br>Inter de Milan</div>
+                    <div class="prix">59,99€</div>
+                    <div class="div-btn">
+                    <button class="custom-btn">Personnaliser</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     </section>
+     </main>
+
+        <footer>   <!-- Le pied de page -->
+          <div class="footer-container">
+            <!--Contenu du pied de page de gauche-->
+            <div class="left-content col-4">
+              <!-- Icones camion livraison -->
+              <div class="livraison-info">
+              <i class="fa-solid fa-truck-fast" width="300px" height="300px"></i>
+              <p class="delivery-free">Livraison offerte dés 50€ d'achat</p>
+              </div>
+              <!-- Navigations du pied de pages -->
+              <div class="navlist-footer">
+                <p class="Navigations">Navigations</p>
+                <ul class="list-footer">
+                  <li>Accueil</li>
+                  <li>Boutique</li>
+                  <li>FAQ</li>
+                  <li>Qui sommes nous ?</li>
+                  <li>Avis</li>
+                  <li>Contactez nous</li>
+                </ul>
+              </div>
+              <!-- Texte mentions légales -->
+              <p class="mentions-légales">Mentions Légales</p>
+            <!-------------------------------------------------------------------->
+
+            </div> <!-- Contenu du milieu du footer-->
+            <div class="mid-content col-4">
+              <div class="paiement-secured">
+                <i class="fa-solid fa-lock"></i>
+                <p class="check-paiement">Paiment sécurisé</p>
+                <img src="/8_Front-end/Images/logo-paiement.png" width="200px" height="90px">
+                <img src="/8_Front-end/Images/logo-paypal.png" width="200px" alt="">
+                <img src="/8_Front-end/Images/Logo-playstore-app-store.png" width="100px" height="100px" alt="logoapp" id="logo-app">
+                </div>
+                <!--  Affichage des réseaux sociaux -->
+                <div class="réseaux-sociaux">
+                <p id="follow">Suivez nous sur</p>
+                <div class="insta">
+                <img src="/8_Front-end/Images/instagram.png" alt="insta" width="50px" height="50px">
+                <p id="instagram">Instagram</p>
+                </div>
+                <div class="whatsapp">
+                <img src="/8_Front-end/Images/whattsapplogo.png" alt="wh" width="50px" height="50px">
+                <p id="whatsapp">Whatsapp</p>
+                </div>
+                <div class="x">
+                  <img src="/8_Front-end/Images/x-new-twitter-logo-free-png.webp" alt="x" width="50px" height="50px">
+                  <p id="x">X</p>
+                </div>
+              </div>
+              <div>
+               <p class="politique-de-confidentialité">Politique de confidentialité</p>
+               </div>
+
+               <!-- --------------------------------------------------- -->
+
+               <!-- Contenu a droite du footer -->
+            </div>
+            <div class="right-content col-4">
+              <!-- Logo délai de livraison -->
+              <i class="fa-solid fa-stopwatch"></i>
+              <p class="delay-delivery">Délai de livraison 24h a 48h</p>
+
+              <!-- Container footer liste des championnats -->
+              <div class="championnats-footer">
+              <div class="item-ligue1">
+                <div class="league-logo">
+                  <nav><a href="">
+                  <img id="ligue1footer" src="/8_Front-end/Images/Logo ligue 1.png" width="80px" height="80px" alt="ligue1"></a></nav>
+                </div>
+                <div class="league-name-footer">Ligue 1</div>
+            </div>
+            <!-- PremierLeague -->
+            <div class="item-premierleague">
+                <div class="league-logo">
+                  <img id="plfooter" src="/8_Front-end/Images/Logopremierleague.png" width="80px" height="80px" alt="">
+                </div>
+                <div class="league-name-footer">Premier League</div>
+            </div>
+            <!-- Serie A -->
+            <div class="item-seriea">
+                <div class="league-logo">
+                  <img id="seriafooter" src="/8_Front-end/Images/aaaaaaaaaaaaaaaaaaaaaa-removebg-preview.png" width="80px" height="80px" alt="logoseria">
+                </div>
+                <div class="league-name-footer">Serie A</div>
+            </div>
+            <!-- Liga -->
+            <div class="item-liga">
+                <div class="league-logo">
+                  <img id="ligafooter" src="/8_Front-end/Images/laligalogo.png" width="80px" height="80px" alt="logoliga">
+                </div>
+                <div class="league-name-footer">Liga</div>
+            </div>
+            <!-- Bundeslisga -->
+            <div class="item-bundesliga">
+                <div class="league-logo">
+                  <img id="bundesligafooter" src="/8_Front-end/Images/bundesligalogo.png" width="80px" height="80px" alt="bundes">
+                </div>
+                <div class="league-name-footer">Bundesliga</div>
+            </div>
+            <p id="CGV">Conditions générales de ventes</p>
+            </div>
+            </div>
+          </div>
+        </footer>
+  </body>
+</html>
