@@ -359,7 +359,7 @@ a {
 .mentions-légales {
   font-size: 15px;
   font-weight: bold;
-  margin-top: 210px;
+  margin-top: 100px;
   text-align: center;
   color: #000066;
 }
@@ -369,7 +369,7 @@ a {
   font-weight: bold;
   text-align: center;
   color: #000066;
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 /* On modifie la list et on l'align au contenue */
@@ -377,13 +377,28 @@ a {
 .list-footer {
   text-align: center;
   list-style-type: none;
-  font-size: 30px;
+  font-size: 15px;
   color: #000066;
+}
+
+#logo_paiement {
+  width: 90px;
+  height: 40px;
+}
+
+#logo_paypal {
+  width: 100px;
+  height: 50px;
+}
+
+#logo_playstore {
+  width: 100px;
+  height: 60px;
 }
 
 /* On re-size les nom des réseaux sociaux */
 #follow {
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
   color: #000066;
   align-items: center;
@@ -399,7 +414,7 @@ a {
   align-items: center;
   padding: 20px;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 0px;
   gap: 20px;
 }
 
@@ -411,6 +426,14 @@ a {
   color: #000066;
 }
 
+#img_insta,
+#img_whatsapp,
+#img_x {
+  width: 35px;
+  height: 35px;
+}
+
+
 .item-ligue1,
 .item-premierleague,
 .item-seriea,
@@ -421,8 +444,17 @@ a {
 
 .league-name-footer {
   align-content: center;
-  font-size: 30px;
+  font-size: 15px;
   color: #000066;
+}
+
+#ligue1footer,
+#plfooter,
+#seriafooter,
+#ligafooter,
+#bundesligafooter {
+  width: 35px;
+  height: 35px;
 }
 
 .championnats-footer {

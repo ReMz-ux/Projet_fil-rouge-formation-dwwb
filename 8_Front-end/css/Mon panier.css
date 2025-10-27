@@ -8,7 +8,7 @@
 .panier-container {
     border: 2px solid #000066;
     border-radius: 15px;
-    background-color: #f1f2eef5;
+    background-color: white;
     width: 500px;
     height: auto;
     padding: 15px;
@@ -28,7 +28,7 @@
 .récap-commande {
     border: 2px solid #000066;
     border-radius: 15px;
-    background-color: #f1f2eef5;
+    background-color: white;
     width: 300px;
     height: auto;
     padding: 15px;
