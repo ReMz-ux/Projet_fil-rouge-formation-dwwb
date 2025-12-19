@@ -1,5 +1,5 @@
 
-//!!!!!!!DYNAMISE LES BOUTONS DU FORMULAIRE D'INSCRIPTION!!!!!//
+//!!!!!!!DYNAMISME LES BOUTONS DU FORMULAIRE D'INSCRIPTION!!!!!//
 //===== Je recupere les boutons de mon fichier html =====//
 const boutonInscription = document.querySelector('.inscription');
 const boutonConnexion = document.querySelector('.connexion');
