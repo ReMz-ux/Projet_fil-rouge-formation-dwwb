@@ -1,0 +1,10 @@
+# Fichiers de configuration sensibles
+env.php
+
+# Dépendances Composer
+/vendor/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini

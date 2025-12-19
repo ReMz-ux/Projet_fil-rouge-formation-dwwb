@@ -2,13 +2,17 @@
 
 namespace back_end\Database;
 
+// Chargement du fichier de configuration
+require_once __DIR__ . '/../env.php';
+
 class Mysql
 {
     // Methode pour se connecter a la base de donnees
     public function connect()
     {
         try {
-            $pdo = new \PDO('mysql:host=localhost;dbname=le12emeshop;charset=utf8mb4', 'root', '');
+            $dsn = sprintf('mysql:host=%s;dbname=%s;charset=%s', DB_HOST, DB_NAME, DB_CHARSET);
+            $pdo = new \PDO($dsn, DB_USER, DB_PASS);
             $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             return $pdo;
         } catch (\PDOException $e) {
