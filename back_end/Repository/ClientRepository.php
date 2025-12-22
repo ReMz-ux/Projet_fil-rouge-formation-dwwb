@@ -18,7 +18,7 @@ class ClientRepository
         $this->connection = (new Mysql())->connect();
     }
 
-    public function inscription(Client $client)
+    public function enregistrementBDD(Client $client)
     {
         try {
             // Ecrire la requete SQL
@@ -36,7 +36,7 @@ class ClientRepository
         }
     }
 
-    public function connexion(string $email)
+    public function recupererlescompteclient(string $email)
     {
         try {
             // Ecrire la requete SQL
